@@ -17,7 +17,7 @@ header img {
 }
 
 #skills {
-    display: none;
+    display: yes;
 }
 
 #toggle-skills {

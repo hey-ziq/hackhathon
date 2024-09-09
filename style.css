@@ -1,34 +1,125 @@
-
+/* Importing Google Fonts */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    color: #46133a;
-    background-color: antiquewhite;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9fafb;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
-header {
-    text-align: start;
+/* Container styling */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-header img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+/* Header styling */
+.header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #ececec;
 }
 
-#skills {
-    display: yes;
+.header h1 {
+    font-size: 2.5rem;
+    color: #4a90e2;
+    margin: 0;
 }
 
-#toggle-skills {
-    background-color: #000000;
-    color: #eb0e0e;
-    padding: 10px 20px;
+.header p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Resume Section */
+.resume {
+    margin-top: 30px;
+}
+
+.resume-section {
+    padding: 15px;
+    border: 1px solid #ececec;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    background-color: #f7f9fc;
+    position: relative;
+}
+
+.resume-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #4a90e2;
+}
+
+.toggle-btn {
+    background-color: #4a90e2;
+    color: white;
     border: none;
-    border-radius: 5px;
+    padding: 5px 10px;
     cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
-#toggle-skills:hover {
-    background-color: #000000;
+.toggle-btn:hover {
+    background-color: #357ab7;
+}
+
+/* Form Section */
+.form-section {
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.btn {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #357ab7;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .toggle-btn {
+        font-size: 0.8rem;
+    }
 }
